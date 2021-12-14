@@ -1,0 +1,100 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal-nav {
+    display: flex;
+    margin-left: 1em;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 255px;
+    flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+.videoSobre .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    
+}
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+@media screen and (max-width:480px) {
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .conteudoPrincipal-cursos-link a {
+        font-size: 0.7em;
+    }
+    .conteudoPrincipal-cursos-link {
+        width: 99%;
+    }
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-contatoForm {
+        width: auto;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+    }
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1; 
+    }
+}
